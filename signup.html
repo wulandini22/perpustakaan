@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Sign Up - Admin</title>
+        <script type="text/javascript" src="js/Chart.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <link href="css/signup.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <form class="form p-3 mt-3" enctype="multipart/form-data" method="post" action="signupcek.php">
+        <p class="title">Register </p>
+        <h1 class="message">Daftar untuk mendapatkan akses</h1>
+        <div class="flex">
+            <label>
+                <input required="" placeholder="" type="text" name="tnama" class="input">
+                <span>Nama</span>
+            </label>
+        </div>
+
+        <div class="flex">
+            <label>
+                <!-- <span>Role</span> -->
+                <select required="" class="input select2 form-control" name="trole">
+                    <option value="" disabled selected>Pilih Role</option>
+                    <option value="input buku">Input Buku</option>
+                    <option value="input anggota">Input Anggota</option>
+                    <option value="transaksi">Transaksi</option>
+                </select>
+            </label>
+        </div>
+        
+                
+        <div class="flex">
+            <label>
+                <input required="" placeholder="" type="text" name="tnip" class="input">
+                <span>NIP</span>
+            </label>
+        </div>
+
+        <div class="flex">
+        <label>
+            <input required="" placeholder="" type="email" name="temail" class="input">
+            <span>Email</span>
+        </label> 
+        </div>
+        
+        <div class="flex">
+        <label>
+            <input required="" placeholder="" type="password" name="tpass" class="input">
+            <span>Password</span>
+        </label>
+        </div>
+        
+        <button class="submit">Submit</button>
+        <p class="signin">Already have an acount ? <a href="login.html">Log in</a> </p>
+    </form>
+  </body>
+</html>
